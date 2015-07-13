@@ -94,4 +94,31 @@
     }
 }
 
+-(IBAction)testAlertView:(id)sender {
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert test" message:@"Alert test goes here!" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    
+    [alertView show];
+
+}
+
+-(IBAction) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    self.label.text = [[NSString alloc] initWithFormat:@"buttonIndex=%d", buttonIndex];
+}
+
+-(IBAction)testActionSheet:(id)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"danger" otherButtonTitles:@"FaceBook", @"Sina Weibo", @"Wechat", @"Twitter", nil];
+    actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
+    [actionSheet showInView:self.view];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    self.label.text = [[NSString alloc] initWithFormat:@"buttonIndex=%d", buttonIndex];
+}
+
+-(IBAction)onItemClick:(id)sender {
+    UIBarButtonItem *item = (UIBarButtonItem *)sender;
+    self.label.text = [[NSString alloc] initWithFormat:@"tag=%d", item.tag];
+}
+
 @end

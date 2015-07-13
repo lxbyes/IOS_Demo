@@ -26,7 +26,7 @@
 }
 
 -(IBAction)loadHtml:(id)sender {
-    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"www/index" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
     
     NSError *error = nil;
@@ -39,7 +39,7 @@
 }
 
 -(IBAction)loadData:(id)sender {
-    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"www/index" ofType:@"html"];
     NSURL *bundleUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
     
     NSData *htmlData = [[NSData alloc] initWithContentsOfFile:htmlPath];

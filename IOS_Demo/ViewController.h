@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate>
+@interface ViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate, UIActionSheetDelegate>
+
+-(IBAction)testAlertView:(id)sender;
+
+-(IBAction)testActionSheet:(id)sender;
 
 @end
 

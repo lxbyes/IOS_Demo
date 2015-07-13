@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>ModelViewSimple.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>PageControlNavigation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>WebViewDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +58,26 @@
 			<true/>
 		</dict>
 		<key>0E756DEF1B4D26A500A446B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E839A3D1B4F6F1D0021B87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E839A551B4F6F1D0021B87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E839A6A1B4F84800021B87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E839A821B4F84800021B87A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
